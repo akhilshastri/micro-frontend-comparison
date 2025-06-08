@@ -44,9 +44,7 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
       name: 'customerApp',
-      remotes: {
-        supplierApp: 'supplierApp@http://localhost:6001/supplier/remoteEntry.js',
-      },
+      remotes: {},
       shared: {
         react: { singleton: true },
         'react-dom': { singleton: true },

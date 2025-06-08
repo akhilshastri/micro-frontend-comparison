@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button } from 'webpack-ui-components';
+import { UIComponents } from 'webpack-ui-components';
+const { Button } = UIComponents;
 import SupplierComponent from './components/SupplierComponent';
 
 function App() {

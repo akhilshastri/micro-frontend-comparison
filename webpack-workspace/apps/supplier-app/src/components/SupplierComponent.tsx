@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Button } from 'webpack-ui-components';
+import { UIComponents } from 'webpack-ui-components';
+const { Button } = UIComponents;
 
 const SupplierComponent: React.FC = () => {
   const [count, setCount] = useState(0);
