@@ -1,0 +1,28 @@
+{
+  "name": "micro-frontend-comparison",
+  "version": "1.0.0",
+  "description": "Comparison of Module Federation implementations using Vite, Webpack, and Rspack",
+  "private": true,
+  "workspaces": [
+    "vite-workspace/*",
+    "vite-workspace/apps/*",
+    "vite-workspace/packages/*",
+    "webpack-workspace/*",
+    "webpack-workspace/apps/*",
+    "webpack-workspace/packages/*",
+    "rspack-workspace/*",
+    "rspack-workspace/apps/*",
+    "rspack-workspace/packages/*"
+  ],
+  "scripts": {
+    "dev:vite": "npm run dev --workspace=vite-workspace",
+    "dev:webpack": "npm run dev --workspace=webpack-workspace",
+    "dev:rspack": "npm run dev --workspace=rspack-workspace",
+    "build:vite": "npm run build --workspace=vite-workspace",
+    "build:webpack": "npm run build --workspace=webpack-workspace",
+    "build:rspack": "npm run build --workspace=rspack-workspace"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "rspack-supplier-app",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "rspack serve",
+    "build": "rspack build",
+    "preview": "serve dist -p 6001"
+  },
+  "dependencies": {
+    "css-loader": "^7.1.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rspack-ui-components": "file:../../packages/ui-components",
+    "style-loader": "^4.0.0"
+  },
+  "devDependencies": {
+    "@rspack/cli": "^0.4.0",
+    "@rspack/core": "^0.4.0",
+    "@rspack/plugin-react-refresh": "^0.4.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "serve": "^14.2.0",
+    "typescript": "^5.0.0"
+  }
+}

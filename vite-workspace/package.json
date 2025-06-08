@@ -1,0 +1,21 @@
+{
+  "name": "vite-workspace",
+  "version": "1.0.0",
+  "description": "Vite-based micro-frontend workspace",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:supplier\" \"npm run dev:customer\"",
+    "dev:customer": "npm run dev --workspace=customer-app",
+    "dev:supplier": "npm run dev --workspace=supplier-app",
+    "build": "npm run build --workspace=supplier-app && npm run build --workspace=customer-app",
+    "build:customer": "npm run build --workspace=customer-app",
+    "build:supplier": "npm run build --workspace=supplier-app"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
